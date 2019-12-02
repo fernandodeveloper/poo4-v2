@@ -21,7 +21,7 @@
 		<form:errors path="nome" cssClass="error"/>
 		<br>
 		Idade: 
-		<form:input path="idade"/>
+		<form:input path="idade" type="number"/>
 		<form:errors path="idade" cssClass="error"/>
 		<br><br>
 		Genero:
@@ -30,7 +30,7 @@
 		
 		<br><br>
 		Serviços Utilizados:
-		<form:checkboxes items="${familiar.opcoesServicos}" path="servicos"/>
+		<form:checkboxes items="${familiar.opcoesServicos}" path="servicos" />
 		<form:errors path="servicos" cssClass="error" />
 		
 		<br><br>

@@ -9,17 +9,14 @@
 <title>Confirmação de Cadastro</title>
 </head>
 <body>
-	<h1>Dados:</h1>
-	<h5>Nome: ${familiar.nome }</h5><br>
-	<h5>Genero: ${familiar.genero }</h5><br>
-	<h5>Idade: ${familiar.idade }</h5><br>
-	
-	<br>
-	
-	Serviços Utilizados:
+	<h1>Dados do Familiar Cadastrado:</h1>
+	<h5>Nome: ${familiar.nome }</h5>
+	<h5>Genero: ${familiar.genero }</h5>
+	<h5>Idade: ${familiar.idade }</h5>
+	<h5>Serviços Utilizados:</h5>
 	<ul>
-		<c:forEach var="item" items="${familar.servicos}">
-			<li> ${item} </li>
+		<c:forEach var="item" items="${familiar.servicos}">
+			<li> <b>${item} </b></li>
 		</c:forEach>
 	</ul>
 </body>

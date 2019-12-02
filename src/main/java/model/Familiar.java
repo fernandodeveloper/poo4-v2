@@ -16,7 +16,7 @@ public class Familiar {
 	@NotBlank(message="Obrigatorio")
 	private String genero;
 	
-	@Min(value=-1, message="Idade inválida!")
+	@Min(value=0, message="Idade inválida!")
 	@Max(value=130, message="Idade inválida!")
 	@NotNull(message="Obrigatorio")
 	private Integer idade;
